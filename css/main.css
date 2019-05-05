@@ -50,18 +50,20 @@
 }
 
 body {
-  color: #777777;
+  color: black;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 ol, ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /*list-style: none;*/
 }
 
 select {
