@@ -488,12 +488,9 @@
 							</div>
 						</div>
 					</div>										
-					<form class="form-area mt-60" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSddgR0pD3pyDtPetjImGTpJovehsSpGit1UG0h4keLCv6u63w/formResponse" method="post" class="contact-form text-right" enctype="text/plain" target="hidden_iframe" >
+					<form class="form-area mt-60" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSddgR0pD3pyDtPetjImGTpJovehsSpGit1UG0h4keLCv6u63w/formResponse" method="post" class="contact-form text-right" target="hidden_iframe" onsubmit="submitted=true;" >
 						<div class="row">	
-						<div class="col-lg-6 form-group">
-
-							<!-- https://docs.google.com/forms/d/e/1FAIpQLSddgR0pD3pyDtPetjImGTpJovehsSpGit1UG0h4keLCv6u63w/viewform?usp=pp_url&entry.2098150001=test+name&entry.388358409=testemail@gmail.com&entry.737130718=test+mobile&entry.504091160=Tets -->
-							
+						<div class="col-lg-6 form-group">							
 							<input name="entry.2098150001" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
 						
 							<input name="entry.388358409" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
@@ -502,25 +499,33 @@
 						</div>
 						<div class="col-lg-6 form-group">
 							<textarea class="common-textarea mt-10 form-control" name="entry.504091160" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-							<button class="primary-btn mt-20" value="submit" type="submit" >Send Message<span class="lnr lnr-arrow-right"></span></button>
+							<button class="primary-btn mt-20" type="submit" >Send Message<span class="lnr lnr-arrow-right"></span></button>
 							<div class="alert-msg">								
 						</div>
 						</div></div>
 					</form>			
 
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onsubmit="submitted=true;" onload="if(submitted) {}"></iframe>
-
-					<!-- <script src="assets/js/jquery.min.js"></script> -->
 					<script type="text/javascript">var submitted=false;</script>
+	
 					<script type="text/javascript">
 					  $('#gform').on('submit', function(e) {
-					  $('#gform *').fadeOut(2000);
-					  $('#gform').prepend('Your submission has been processed...');
+					  	
+					  	  alert( "Handler for .submit() called." );
+
+					  // $('#gform *').fadeOut(20);
+					  // $('#gform').prepend('Your submission has been processed...');
 					  });
 					</script>			
+	
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+<!-- 
+					<script type="text/javascript">var submitted=false;</script>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+					onload="if(submitted) {window.location='index.html';}"></iframe>
+ -->
 					
-				</div>	
-			</section>
+				</div>
+				</section>
 
 			<!-- end contact Area -->		
 				
