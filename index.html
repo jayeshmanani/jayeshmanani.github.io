@@ -488,7 +488,7 @@
 							</div>
 						</div>
 					</div>										
-					<form class="form-area mt-60" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSddgR0pD3pyDtPetjImGTpJovehsSpGit1UG0h4keLCv6u63w/formResponse" method="post" class="contact-form text-right" enctype="text/plain" target="hidden_iframe" onsubmit="submitted=true;">
+					<form class="form-area mt-60" id="gform" action="https://docs.google.com/forms/d/e/1FAIpQLSddgR0pD3pyDtPetjImGTpJovehsSpGit1UG0h4keLCv6u63w/formResponse" method="post" class="contact-form text-right" enctype="text/plain" target="hidden_iframe" >
 						<div class="row">	
 						<div class="col-lg-6 form-group">
 
@@ -508,12 +508,12 @@
 						</div></div>
 					</form>			
 
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onsubmit="submitted=true;" onload="if(submitted) {}"></iframe>
 
-					<script src="assets/js/jquery.min.js"></script>
+					<!-- <script src="assets/js/jquery.min.js"></script> -->
 					<script type="text/javascript">var submitted=false;</script>
 					<script type="text/javascript">
-					$('#gform').on('submit', function(e) {
+					  $('#gform').on('submit', function(e) {
 					  $('#gform *').fadeOut(2000);
 					  $('#gform').prepend('Your submission has been processed...');
 					  });
