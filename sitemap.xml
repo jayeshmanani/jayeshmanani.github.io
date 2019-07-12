@@ -2,15 +2,21 @@
 <?xml-stylesheet type='text/xsl' href='sitemap.xsl'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"> 
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>http://jayeshmanani.github.io/index.html</loc>
-  <priority>1.0</priority>
+  <loc>https://jayeshmanani.github.io/</loc>
+  <priority>0.8</priority>
   <changefreq>monthly</changefreq>
   <lastmod>2019-07-12T10:19:50+00:00</lastmod>
 </url>
 <url>
-  <loc>http://jayeshmanani.github.io/resume.pdf</loc>
+  <loc>https://jayeshmanani.github.io/index.html</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2019-07-12T10:19:50+00:00</lastmod>
+</url>
+<url>
+  <loc>https://jayeshmanani.github.io/resume.pdf</loc>
   <priority>0.9</priority>
   <changefreq>monthly</changefreq>
   <lastmod>2019-07-12T10:19:50+00:00</lastmod>
